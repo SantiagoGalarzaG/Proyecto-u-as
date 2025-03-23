@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+	--montserrat: "Montserrat", sans-serif;
+	--poppins: "Poppins", sans-serif;
+	--Playfair-Display: "Playfair Display", serif;
+	--colorPrimario: #eef1da;
+	--colorSecundario: #d5e5d5;
+	--colorTerciario: #c7d9dd;
+	--colorCuaternario: #adb2d4;
+}
+h2 {
+	font-family: var(--Playfair-Display);
+	font-size: 42px;
+	font-weight: 900;
+	color: #00879e;
+}
+h3 {
+	font-family: var(--Playfair-Display);
+	font-size: 30px;
+	margin-top: 0;
+	font-weight: 900;
+	color: #00879e;
+}
+p {
+	font-family: var(--poppins);
+	font-size: 20px;
+}
+
+.contenedor__card {
+	display: flex;
+	gap: 60px;
+	padding: 20px;
+}
+.card__imagen {
+	width: 395px;
+	height: 300px;
+	border-radius: 26px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1020px) {
+    .contenedor{
+        padding: 40px 20px;
+    }
+}
+@media (max-width: 910px) {
+    .contenedor__card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__imagen {
+        width: 90%;
+        height: 20%;
+    }
+}
+
+@media (max-width: 440px) {
+    .contenedor__card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__imagen {
+        width: 100%;
+        height: 30%;
+    }
+}
+
+@media (max-width: 350px) {
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+    
+}
+

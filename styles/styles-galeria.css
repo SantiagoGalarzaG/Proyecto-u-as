@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --montserrat:"Montserrat", sans-serif;
+    --poppins:"Poppins", sans-serif;
+    --Playfair-Display: "Playfair Display", serif;
+    --colorPrimario: #EEF1DA;
+    --colorSecundario:#D5E5D5;
+    --colorTerciario:#C7D9DD;
+    --colorCuaternario: #ADB2D4;
+}
+h2{
+    font-family: var(--Playfair-Display);
+    font-size: 42px;
+    font-weight: 900;
+    color: #00879E;
+}
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.imagenes img{
+    width: 45%;
+    height: 50%;
+    border-radius: 26px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+.imagenes img:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 970px) {
+    .contenedor{
+        padding: 40px 20px;
+    }
+    .imagenes{
+        justify-content: center;
+    }
+    .imagenes img{
+        width: 80%;
+    }
+    
+}
+@media (max-width: 650px) {
+
+    .imagenes img{
+        width: 100%;
+        height: 50%;
+    }
+}
